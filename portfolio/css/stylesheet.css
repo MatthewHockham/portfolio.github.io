@@ -1,9 +1,17 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/poppins/Poppins-Black.ttf') format('poppins');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    font-family: Poppins;
 }
 
 header {
@@ -11,12 +19,14 @@ header {
 }
 
 .header {
-    padding: 0 0 0 50px;
+    position: fixed;
     background: #585d65;
     left: 50px;
     right: 50px;
     top: 40px;
     height: 80px;
+    z-index: 100;
+    padding: 0 0 0 50px;
     border-radius: 100px;
 }
 
@@ -55,4 +65,30 @@ header {
     text-decoration: none;
     display: inline-block;
     max-width: 100%;
+}
+
+.btn.download-cv-btn {
+    float: right;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-color: #fff;
+    border-radius: 100px;
+}
+
+a.btn, .btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 64px;
+    line-height: 62px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0px 35px;
+    overflow: hidden;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
 }
