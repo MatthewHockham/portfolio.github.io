@@ -1,6 +1,5 @@
 @charset "utf-8";
-
-@font-face { font-family: Poppins; src: url('Poppins-Regular.ttf'); } /* Doesn't work */
+/* CSS Document */
 
 * {
     box-sizing: border-box;
@@ -198,7 +197,7 @@ li {
 }
 
 .section.start .h-title {
-    margin: 225px 0 0 32.5vw;
+    margin: 250px 0 0 32.5vw;
     padding: 50px;
     font-size: 4.2vw;
     line-height: 1.2;
@@ -221,4 +220,33 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+
+.section.start .content-start {
+    padding-left: 8%;
+    max-width: 500px;;
+}
+
+.section.start .content-start .h-subtitles {
+    height: 18px;
+    margin: 0px 0px 30px;
+}
+
+.h-subtitle, .animation-subtitle, .animation-cursor {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.2;
+    color: aqua;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.animation-cursor {
+    margin-left: 3px;
+}
+
+p {
+    font-size: 14px;
+    padding: 0px;
+    margin: 30px 0px;
 }

@@ -12,13 +12,27 @@
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- Github Js File -->
+         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
         <!-- Embedded CSS to allow smooth scroll -->
         <style type="text/css">
+            @font-face { font-family: 'Poppins'; src: url('fonts/poppins/Poppins-Regular.ttf'); };
+
             html {
                 scroll-behavior: smooth !important;
             }
         </style>
+
+        <!-- Embedded JS for typing effect -->
+         <script>
+            var typed = new Typed(".animation-subtitle", {
+                strings: ["Placeholder #1", "Placeholder #2"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
 
     </head>
 
@@ -28,7 +42,7 @@
         <!-- Logo -->
             <div class="logo">
                 <a href="#">
-                    <img class="logo-img" src="extfiles/images/logo.png" alt="My logo">
+                    <img class="logo-img" src="images/logo.png" alt="My logo">
                     <span class="logo-name">
                         Matthew
                         <br>
@@ -83,7 +97,14 @@
                     </h1>
 
                     <div class="content-start">
-
+                        <div class="h-subtitles">
+                            <div class="h-subtitle animation-subtitle"></div>
+                            <span class="animation-subtitle"></span>
+                            <span class="animation-cursor">|</span>                       
+                        </div>
+                        <div class="h-text">
+                             This is just a placeholder text for the homepage. It will be replaced soon :) 
+                        </div>
                     </div>
                 </div>
             </div>
