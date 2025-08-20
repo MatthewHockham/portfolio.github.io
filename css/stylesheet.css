@@ -2,6 +2,10 @@
 
 @font-face { font-family: Poppins; src: url('Poppins-Regular.ttf'); } /* Doesn't work */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     overflow-x: hidden;
     margin: 0;
@@ -10,7 +14,7 @@ body {
     background-color: #303235;
 }
 
-header {
+div {
     display: block;
 }
 
@@ -63,7 +67,7 @@ header {
     max-width: 100%;
 }
 
-.btn.download-cv-btn {
+.btn.contact-me-btn {
     float: right;
     margin-top: 8px;
     margin-right: 8px;
@@ -150,4 +154,71 @@ li {
 .background-img {
     filter: grayscale(100%);
     mix-blend-mode: luminosity;
+}
+
+.section {
+    position: relative;
+    overflow: hidden;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #585d65;
+}
+
+.section.start{
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    position: relative;
+    overflow: visible;
+    height: 100vh;
+    z-index: 11;
+}
+
+.central {
+    display: table !important;
+    table-layout: fixed !important;
+    height: 100% !important;
+    position: relative !important;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.full-width {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.central-vertical {
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+
+.section.start .h-title {
+    margin: 225px 0 0 32.5vw;
+    padding: 50px;
+    font-size: 4.2vw;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #fff;
+    background: #303235;
+    word-break: break-word;
+    word-wrap: break-word;
+    border-radius: 264px;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
