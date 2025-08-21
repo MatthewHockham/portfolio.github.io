@@ -24,16 +24,6 @@
             }
         </style>
 
-        <!-- Embedded JS for typing effect -->
-         <script>
-            var typed = new Typed(".animation-subtitle", {
-                strings: ["Placeholder #1", "Placeholder #2"],
-                typeSpeed: 150,
-                backSpeed: 150,
-                loop: true
-            })
-        </script>
-
     </head>
 
     <body>
@@ -100,13 +90,34 @@
                         <div class="h-subtitles">
                             <div class="h-subtitle animation-subtitle"></div>
                             <span class="animation-subtitle"></span>
-                            <span class="animation-cursor">|</span>                       
+
+                            <!-- Embedded JS for typing effect -->
+                            <script>
+                                var typed = new Typed(".animation-subtitle", {
+                                    strings: ["Text #1", "Placeholder #2"],
+                                    typeSpeed: 25,
+                                    backSpeed: 25,
+                                    loop: true
+                                });
+                            </script>
                         </div>
                         <div class="h-text">
                              This is just a placeholder text for the homepage. It will be replaced soon :) 
                         </div>
+                        <!-- Contact Me Button #2 -->
+                         <a href="#" class="btn">
+                            CONTACT ME
+                            <i class="icon fas fa-chevron-right"></i>
+                         </a>
                     </div>
                 </div>
+            </div>
+         </div>
+
+         <!-- About Section Begins Here -->
+         <div class="section about" id="section-about">
+            <div class="content">
+                
             </div>
          </div>
 
