@@ -11,11 +11,9 @@ body {
     padding: 0;
     font-family: Poppins;
     background-color: #303235;
+    color: #fff;
 }
 
-div {
-    display: block;
-}
 
 .header {
     position: fixed;
@@ -81,6 +79,7 @@ a.btn, .btn {
     line-height: 62px;
     text-align: center;
     font-size: 12px;
+    font-family: Poppins;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
@@ -128,6 +127,7 @@ li {
 .header-menu ul li a {
     color: #fff;
     text-decoration: none;
+    font-family: Poppins;
 }
 
 .background {
@@ -166,7 +166,7 @@ li {
     z-index: 12;
 }
 
-.section.start{
+.section.start {
     margin: 0;
     padding-top: 0;
     padding-left: 0;
@@ -203,7 +203,6 @@ li {
     font-size: 56px;
     line-height: 1.2;
     font-weight: 800;
-    color: #fff;
     background: #303235;
     word-break: break-word;
     word-wrap: break-word;
@@ -250,7 +249,6 @@ h1 {
 }
 
 .content-start .h-text {
-    color: #fff;
     font-size: 14px;
 }
 
@@ -262,4 +260,77 @@ h1 {
 .section .content {
     position: relative;
     max-width: 720px;
+}
+
+.section .titles {
+    position: relative;
+    margin: 0 0 60px 40vw;
+}
+
+.section .titles .title {
+    margin-bottom: 10px;
+    max-width: 70px;
+    font-size: 55px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.section .titles .subtitle {
+    font-size: 14px;
+    line-height: 1.2;
+    color: aqua;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.columns {
+    margin: 0 -20px;
+    position: relative;
+}
+
+.columns .col {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    float: left;
+    width: 50%;
+}
+
+p {
+    font-size: 14px;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.columns .col.col-span {
+    width: 100%;
+}
+
+.info-list {
+    margin-bottom: 20px;
+}
+
+.info-list ul {
+    list-style: none;
+    margin: 0 -20px;
+    padding: 0;
+    font-size: 0;
+}
+
+.info-list ul li {
+    margin: 0 0 6px 0;
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.info-list ul li strong {
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: aqua
 }
