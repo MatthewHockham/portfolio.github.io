@@ -14,6 +14,11 @@ body {
     color: #fff;
 }
 
+p {
+    font-size: 14px;
+    padding: 0;
+    margin: 30px 0;
+}
 
 .header {
     position: fixed;
@@ -158,6 +163,7 @@ li {
 .section {
     position: relative;
     overflow: hidden;
+    margin: 50px 0 0 40vw;
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 70px;
@@ -177,7 +183,7 @@ li {
     z-index: 11;
 }
 
-.central {
+.section.start .central {
     display: table !important;
     table-layout: fixed !important;
     height: 100% !important;
@@ -187,12 +193,12 @@ li {
     z-index: 2;
 }
 
-.full-width {
+.section.start .full-width {
     max-width: 100% !important;
     width: 100% !important;
 }
 
-.central-vertical {
+.section.start .central-vertical {
     display: table-cell !important;
     vertical-align: middle !important;
 }
@@ -209,11 +215,11 @@ li {
     border-radius: 264px;
 }
 
-h1 {
+.section.start h1 {
     font-size: 34px;
 }
 
-h1 {
+.section.start h1 {
     display: block;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
@@ -233,7 +239,7 @@ h1 {
     margin: 0px 0px 30px;
 }
 
-.h-subtitle, .animation-subtitle, .typed-cursor {
+.section.start .h-subtitle, .animation-subtitle, .typed-cursor {
     display: inline-block;
     font-size: 18px;
     line-height: 1.2;
@@ -242,13 +248,13 @@ h1 {
     text-transform: uppercase;
 }
 
-.typed-cursor {
+.section.start .typed-cursor {
     margin-left: 3px;
     opacity: 1;
     animation: blink 0.7s infinite;
 }
 
-.content-start .h-text {
+.section.start .content-start .h-text {
     font-size: 14px;
 }
 
@@ -257,17 +263,17 @@ h1 {
     margin-right: 15px;
 }
 
-.section .content {
+.section.about .content {
     position: relative;
     max-width: 720px;
 }
 
-.section .titles {
+.section.about .titles {
     position: relative;
-    margin: 0 0 60px 40vw;
+    margin: 0 0 60px 0;
 }
 
-.section .titles .title {
+.section.about .titles .title {
     margin-bottom: 10px;
     max-width: 70px;
     font-size: 55px;
@@ -275,7 +281,7 @@ h1 {
     font-weight: 800;
 }
 
-.section .titles .subtitle {
+.section.about .titles .subtitle {
     font-size: 14px;
     line-height: 1.2;
     color: aqua;
@@ -283,40 +289,34 @@ h1 {
     text-transform: uppercase;
 }
 
-.columns {
+.section.about .columns {
     margin: 0 -20px;
     position: relative;
 }
 
-.columns .col {
+.section.about .columns .col {
     margin-bottom: 30px;
     padding: 0 20px;
     float: left;
     width: 50%;
 }
 
-p {
-    font-size: 14px;
-    padding: 0;
-    margin: 30px 0;
-}
-
-.columns .col.col-span {
+.section.about .columns .col.col-span {
     width: 100%;
 }
 
-.info-list {
+.section.about .info-list {
     margin-bottom: 20px;
 }
 
-.info-list ul {
+.section.about .info-list ul {
     list-style: none;
     margin: 0 -20px;
     padding: 0;
     font-size: 0;
 }
 
-.info-list ul li {
+.section.about .info-list ul li {
     margin: 0 0 6px 0;
     padding: 0 20px;
     display: inline-block;
@@ -326,7 +326,7 @@ p {
     font-weight: 600;
 }
 
-.info-list ul li strong {
+.section.about .info-list ul li strong {
     display: inline-block;
     vertical-align: top;
     width: 90px;
