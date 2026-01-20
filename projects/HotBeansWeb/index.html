@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!--Title of the web page-->
+<title>Our Vacancies - Web Developers</title>
+<!-- Meta Tag for Search Engine Optimisation -->
+<meta name="description" content="Web developer jobs available at Hot Beans Web, a company about helping small businesses thrive online.">
+<!--Linked css files-->
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style type="text/css">
+    footer {
+        text-align: left;
+        padding: 3px 0px;
+        background-color: #333;
+        border-top: solid white;
+        color: white;
+    }
+
+    html {
+        scroll-behavior: smooth !important;
+    }
+</style>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="header-top">
+            <a href="#imagebox" style="text-decoration: none;"><h1>Hot Beans Web&nbsp;</h1></a>
+            <div class="searchbar">
+                <form id="search-form">
+                    <input type="text" id="text" placeholder="Search..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div id="navbar">
+            <!-- NavBar Pages -->
+            <div class="nav-bar" id="topnav">
+                <a href="#about" class="nav-link"><i class="fas fa-circle-user"></i> ABOUT</a>
+                <a href="#ourTeam" class="nav-link"><i class="fas fa-users"></i> OUR TEAM</a>
+                <a href="#jobs" class="nav-link"><i class="fas fa-briefcase"></i> JOBS</a>
+                <a href="#courses" class="nav-link"><i class="fas fa-book"></i> COURSES</a>
+            </div>
+            <!-- Hide nav bar for smaller screens -->
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                <i style="color:black" class="fas fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div style="color: #333">
+        <div class="imagebox" id="imagebox">
+            <div class="top-page-center-text">
+                <p>Are you an experienced website developer?</p>
+                <div class="subtitle">
+                    <p>We need people like you who make a high-quality, <br>
+                    perfectional web page for any business.</p>
+                </div>
+                <div class="read-more-button" style="text-decoration: none;"><a href="#jobs">Read more →</a></div>
+            </div>
+        </div>
+    <div id="about" class="section">
+        <h1 style="text-decoration: underline">About Us</h1>
+        <div id="about-text">
+            <p><strong>Hot Beans Web</strong> is a forward-thinking digital agency founded in 2024 with a clear ethos: to enable small
+                businesses by building clean, functional, and affordable websites. We understand that for many small 
+                business owners, an effective online presence can make the difference between growth and idleness - 
+                and we're here to make that difference.
+            </p>
+            <p>Our team, currently made up of four dedicated professionals, brings a mix of creativity, technical skill, 
+                and client-first thinking to every project we take on. While we're still an upcoming company, out passion
+                and focus on results have already earned us trusted partnerships with several businesses whose websites 
+                and domains we manage on an ongoing basis.
+            </p>
+            <p>Looking ahead, we are actively looking at expanding the team to increase our capacity, accelerate workflow, and
+                server even more customers with the same level of personal care and professionalism that defines our work.
+            </p>
+            <p>Whether you're launching your first website or looking to upgrade an exisitng one, Hot Beans Web is ready to
+                help you stand out online!
+            </p>
+        </div>
+    </div>
+
+    <div id="ourTeam" class="section">
+        <h1 style="text-decoration: underline">Our Team</h1>
+        <div class="teamText">
+            <p>Our team is made up of friendly, skilled people who are passionate about helping
+                small businesses succeed online. From building websites to making them work smoothly
+                and look great, everyone here plays an important role in bringing your ideas to life. 
+                Get to know the people behind Hot Beans Web!
+            </p>
+        </div>
+        <div class="carousel-container" id="carousel-container">
+            <div class="carousel-track" id="carousel-track">
+                <div class="profile-card">
+                    <div class="card">
+                        <img src="images/CEO-Founder.png" alt="Bob Speight">
+                        <h3>Bob Speight</h3>
+                        <div class="role">CEO/Founder</div>
+                        <p>Bob started this company after his own business didn't work out because he didn't have
+                            a reliable, cheap website. He knows how important a good website is for a small business
+                            to show off what they do alongside keep financies, positive. That's why he created Hot
+                            Beans Web - to help small businesses succeed and grow online.
+                        </p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="card">
+                        <img src="images/employee_2.png" alt="Lydia Henderson">
+                        <h3>Lydia Henderson</h3>
+                        <div class="role">Client Liasion</div>
+                        <p>Lydia is the main point of contact between our clients and the team. She makes
+                            sure everyone stays on the same page and helps resolve any issues along the way.
+                            Friendly and easy to talk to, Lydia works hard to keep our clients happy and communicate
+                            with them whilst our projects are ran smoothly.
+                        </p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="card">
+                        <img src="images/employee_3.png" alt="George Revie">
+                        <h3>George Revie</h3>
+                        <div class="role">Web Developer</div>
+                        <p>George builds and maintains the websites that help our clients look great online.
+                            He works behind the scenes to make sure everything runs smoothly and looks just
+                            right. Friendly and focused, George is a key part of our team making sure websites
+                            work well for everyone.
+                        </p>
+                    </div>
+                </div>
+                    <div class="profile-card">
+                    <div class="card">
+                        <img src="images/employee_4.png" alt="Braydon Philips">
+                        <h3>Braydon Philips</h3>
+                        <div class="role">'Javascript Programmer'</div>
+                        <p>Braydon is our newest team member who specialises in Javascript. He writes the code
+                            that makes our websites interactive and fun to use. Excited to be part of the team, 
+                            Bradyon is laready helping us create smarter, faster websites for our clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-buttons">
+                <button onclick="moveCarousel(-1)">⬅️ Prev</button>
+                <button onclick="moveCarousel(1)">Next ➡️</button>
+            </div>
+        </div>
+
+    <div id="jobs" class="section">
+        <h1 style="text-decoration: underline">Current Vacancies</h1>
+        <div class="job-card">
+            <div class="card">
+                <img src="images/javascriptJob.jpg" alt="Picure of Javascript Code (image from Wallpaper.com)">
+                <div class="job_role"><h3>Javascript Programmer</h3></div>
+                <p>We’re looking for a skilled JavaScript Programmer to join the Hot Beans Web team. 
+                    In this role, you'll be responsible for building and maintaining high-quality JavaScript frameworks and tools. 
+                    You'll collaborate with designers, backend developers, and the CEO to create seamless user experiences for our clients.
+                </p>
+                <p id="about-title">What you'll be doing:</p>
+                <ul id="about-bullet-point">
+                    <li>Building and maintaining web apps using JavaScript (think React, Vue, etc.)</li>
+                    <li>Collaborating with the team on new ideas and features</li>
+                    <li>Making things fast, smooth, and user-friendly</li>
+                </ul>
+                <p id="about-title">What we're looking for:</p>
+                <ul id="about-bullet-point">
+                    <li>Solid JavaScript skills</li>
+                    <li>Experience with at least one modern framework (React, Vue, .etc)</li>
+                    <li>Comfort with HTML/CSS and basic responsive design</li>
+                    <li>A good understanding of Git and how to work in a team</li>
+                </ul>
+                <p id="about-title">Why join us?</p>
+                <ul id="about-bullet-point">
+                    <li>Real impact from day one</li>
+                    <li>Flexible hours and remote-friendly</li>
+                    <li>We’re growing — and you’ll grow with us</li>
+                </ul>
+                <div class="apply-button">
+                    <button class="btn-apply" id="btn-apply" onclick="toggleForm()">Apply Here →</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="card">
+                <img src="images/websiteDesignerJob.jpg" alt="Picture of a website design (image from Adobe Stock)">
+                <div class="job_role"><h3>Website Designer</h3></div>
+                <p>We’re looking for a creative and detail-oriented Website Designer to join our team. 
+                    In this role, you'll be responsible for designing clean, engaging, and user-friendly websites that align with our clients goals as a small business. 
+                    You'll collaborate closely with developers, javascript developers, and other team members to bring promotion for a company to life.
+                </p>
+                <p id="about-title">What you'll be doing:</p>
+                <ul id="about-bullet-point">
+                    <li>Designing beautiful, user-friendly websites (mostly for web, sometimes mobile)</li>
+                    <li>Turning concepts into wireframes, mockups, and finished layouts</li>
+                    <li>Collaborating with developers to make sure your designs actually work</li>
+                    <li>Helping define and maintain our design style and visual identity</li>
+                </ul>
+                <p id="about-title">What we're looking for:</p>
+                <ul id="about-bullet-point">
+                    <li>Solid experience with web design tools (Figma, Adobe XD, Sketch — your choice)</li>
+                    <li>A portfolio that shows off your style and skills</li>
+                    <li>Understanding of basic UX principles and responsive design</li>
+                    <li>A creative mindset and a willingness to try new things</li>
+                </ul>
+                <p id="about-title">Why join us?</p>
+                <ul id="about-bullet-point">
+                    <li>Freedom to experiment and take creative risks</li>
+                    <li>Flexible hours and remote-friendly</li>
+                    <li>We’re growing — and you’ll grow with us</li>
+                </ul>
+                <div class="apply-button">
+                    <button class="btn-apply" id="btn-apply" onclick="toggleForm()">Apply Here →</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="formPopup" class="overlay-container">
+            <div class="popup-box">
+                <h2>Application Form</h2>
+                <form class="form-container">
+                    <div class="form-section">
+                        <p><input placeholder="First name.." oninput="this.className= ''" required></p>
+                        <p><input placeholder="Last name.." oninput="this.className= ''" required></p>
+                    </div>
+
+                    <div class="form-section">
+                        <p><input placeholder="Email address.." oninput="this.className= ''" required></p>
+                        <p><input placeholder="Phone number.." oninput="this.className= ''" required></p>
+                    </div>
+
+                    <button type="submit" id="submitBtn">Submit</button>
+                    <button type="button" id="closeBtn" onclick="toggleForm()">Close</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="courses" class="section">
+        <h1 style="text-decoration: underline">Courses To Take</h1>
+        <div class="course-card">
+            <a href="https://www.coursera.org/professional-certificates/ibm-full-stack-javascript-developer" target="_blank"><img src="images/IBM_logo.png" alt=""></a>
+            <div class="course-name"><h3>IBM Full-Stack JavaScript Developer Professional Certificate</h3></div>
+            <div class="course-sub">What you'll learn:</div>
+            <ul id="course-bullet-point">
+                <li>Master the full-stack development languages, frameworks, tools, and technologies 
+                    to develop job-ready skills valued by employers.</li><br>
+                <li>Write, deploy, and scale cloud-native back-end applications using Node, 
+                    NoSQL databases, containers, microservices, and serverless.</li><br>
+                <li>Develop websites and front-end software using HTML, CSS, JavaScript, and React.</li><br>
+                <li>Employ DevOps practices and Agile methodologies to continuously build and deploy 
+                    software using CI/CD tools.</li>
+            </ul>
+            <div class="course-read-more" style="text-decoration: none;"><a href="https://www.coursera.org/professional-certificates/ibm-full-stack-javascript-developer" target="_blank">Read more →</a></div>
+        </div>
+        <div class="course-card">
+            <a href="https://www.edx.org/learn/web-development/ibm-introduction-to-web-development-with-html5-css3-and-javascript" target="_blank"><img src="images/IBM_logo.png" alt=""></a>
+            <div class="course-name"><h3>IBM: Introduction to Web Development with HTML5, CSS3, and JavaScript</h3></div>
+            <div class="course-sub">What you'll learn:</div>
+            <ul id="course-bullet-point">
+                <li>Understand the Cloud Development Ecosystem and Terminology like front-end developer, back-end, server-side, full stack, etc.</li><br>
+                <li>Work with programming languages used by front-end developers for creating user interfaces</li><br>
+                <li>Become familiar with the developer tools and IDEs used by web programmers</li><br>
+                <li>Practice and develop hands-on skills to work with HTML, CSS and JavaScript</li><br>
+                <li>Manage and version control your projects with Git and GitHub</li>
+            </ul>
+            <div class="course-read-more" style="text-decoration: none;"><a href="https://www.edx.org/learn/web-development/ibm-introduction-to-web-development-with-html5-css3-and-javascript" target="_blank">Read more →</a></div>
+        </div>
+        <div class="course-card">
+            <a href="https://www.edx.org/learn/computer-science/ibm-guided-project-interest-calculator-using-html-css-js" target="_blank"><img src="images/IBM_logo.png" alt=""></a>
+            <div class="course-name"><h3>IBM: Guided Project: Interest Calculator Using HTML, CSS & JS</h3></div>
+            <div class="course-sub">What you'll learn:</div>
+            <ul id="course-bullet-point">
+                <li>Modify HTML file according to requirements</li><br>
+                <li>Modify CSS file according to requirements</li><br>
+                <li>Modify JavaScript files according to requirements</li>
+            </ul>
+            <div class="course-read-more" style="text-decoration: none;"><a href="https://www.edx.org/learn/computer-science/ibm-guided-project-interest-calculator-using-html-css-js" target="_blank">Read more →</a></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!--Footer of page-->
+        <footer>
+             <div id="footerSitemap">
+                <p><b>Sitemap</b></p>
+                <a href="#imagebox">Back to Top</a><br>
+                <a href="#ourTeam">Our Team</a><br>
+                <a href="#jobs">Jobs</a><br>
+                <a href="#courses">Courses</a><br>
+                <a href="#apply">Apply</a>
+             </div>
+
+              <div id="footerInfo">
+                <p><b><a href="about.html">FAQs</a></b><br>
+                <a href="T&C.html">Terms and Conditions</a></p>
+              </div>
+
+               <div id="footerContactDetails">
+                <p>E: <a style="color:white; text-decoration:underline" href="mailto:info@hotbeansweb.org">info@hotbeansweb.org</a><br>
+                    T: +44 (0) 57 984 1267</p>
+               </div>
+               
+                <div id="footerLocationHQ">
+                    <p><b>Contact:</b><br><br>
+                    Hot Beans Web<br>
+                    Location<br>
+                    Post Code<br>
+                    <br>
+                    <div id="footerMedia" display="inline-block">
+                        <b>Follow us:</b><br>
+                        <a href="https://www.facebook.com/@hotbeansweb"><i class="fa-brands fa-facebook" width="20px" alt=""></i></a>
+                        <a href="https://www.instagram.com/@hotbeansweb"><i class="fa-brands fa-instagram" width="20px" alt=""></i></a>
+                        <a href="https://www.x.com/@hotbeansweb"><i class="fa-brands fa-x" width="20px" alt=""></i></a>
+                        <a href="https://www.linkedin.com/@hotbeansweb"><i class="fa-brands fa-linkedin" width="20px" alt=""></i></a>
+                    </div>
+                    </p>
+                </div>
+                <p class="text-center text-body-secondary" id="footerCopyright"><a style="color: white;">© 2025 Hot Beans Web</a></p> <!--Copyright for the page-->
+    </div>
+<script src="javascript/javascript.js" defer></script>
+</body>
+</html>
