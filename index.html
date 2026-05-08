@@ -1,32 +1,38 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<!-- Title of the Webpage -->
-<title>Portfolio - Matthew Hockham</title>
-<!-- Meta tag for SEO -->
-<meta name="description" content="">
-<!-- Linked CSS File -->
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of the Webpage -->
+        <title>Portfolio - Matthew Hockham</title>
+        <!-- Meta tag for SEO -->
+        <meta name="description" content="">
+        <!-- Linked CSS File -->
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- Github Js File -->
+         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-<!-- Embedded CSS to allow smooth scroll -->
-<style type="text/css">
-    html {
-        scroll-behavior: smooth !important;
-    }
-</style>
+        <!-- Embedded CSS to allow smooth scroll -->
+        <style type="text/css">
+            @font-face { font-family: 'Poppins'; src: url('fonts/poppins/Poppins-Regular.ttf'); };
 
-</head>
+            html {
+                scroll-behavior: smooth !important;
+            }
+        </style>
+
+    </head>
+
     <body>
-        <!-- Header -->
+    <!-- Header -->
         <div class="header" id="header">
-            <!-- Logo -->
+        <!-- Logo -->
             <div class="logo">
                 <a href="#">
-                    <img class="logo-img" src="extfiles/images/logo.png" alt="My logo">
+                    <img class="logo-img" src="images/logo.png" alt="My logo">
                     <span class="logo-name">
                         Matthew
                         <br>
@@ -34,19 +40,148 @@
                     </span>
                 </a>
             </div>
-            <!-- Mobile Menu Button -->
+        <!-- Mobile Menu Button -->
              <a href="#" class="menu-btn"></a>
 
-            <!-- Download CV Button -->
-            <a href="extfiles/Matthew Hockham CV.docx" class="btn download-cv-btn">
-                DOWNLOAD CV
-                <i class="icon fas fa-download"></i>
-                </a>
+        <!-- Contact Me Button -->
+            <a href="#" class="btn contact-me-btn">
+                CONTACT ME
+                <i class="fa-solid fa-address-book"></i>
+            </a>
+            
+
+        <!-- Buttons for Header -->
+            <div class="header-menu">
+                <div class="header-menu-nav">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#section-start">HOME</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#resume">RESUME</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#projects">MY PROJECTS</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+    <!-- Background -->
+         <div class="background">
+            <div class="background-filter">
+                <div class="background-img" style="background-image: url('');"></div>
+            </div>
+         </div>
+         
+    <!-- Main Section Begins Here -->
+         <div class="section start" id="section-start">
+            <div class="central full-width">
+                <div class="center-vertical">
+                    <h1 class="h-title">
+                        Matthew
+                        <br>
+                        Hockham
+                    </h1>
+
+                    <div class="content-start">
+                        <div class="h-subtitles">
+                            <div class="h-subtitle animation-subtitle"></div>
+                            <span class="animation-subtitle"></span>
+
+                            <!-- Embedded JS for typing effect -->
+                            <script>
+                                var typed = new Typed(".animation-subtitle", {
+                                    strings: ["Text #1", "Placeholder #2"],
+                                    typeSpeed: 25,
+                                    backSpeed: 25,
+                                    loop: true
+                                });
+                            </script>
+
+                        </div>
+                        <div class="h-text">
+                             This is just a placeholder text for the homepage. It will be replaced soon :) 
+                        </div>
+                        <!-- Contact Me Button #2 -->
+                         <a href="#" class="btn">
+                            CONTACT ME
+                            <i class="icon fas fa-chevron-right"></i>
+                         </a>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- About Section Begins Here -->
+         <div class="section about" id="section-about">
+            <div class="content">
+                <div class="titles">
+                    <div id="about" class="title">About Me</div>
+                    <div class="subtitle">My Story</div>
+                </div>
+
+                <!-- Text -->
+                 <div class="columns">
+                    <div class="col">
+                        <div class="post-text">
+                            <p>Placeholder</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="post-text">
+                            <p>Placeholder</p>
+                        </div>
+                    </div>
+                    <div class="col-span">
+                        <div class="post-text">
+                            <p>Placeholder Text</p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="info-list">
+                    <ul>
+                        <li><strong>Placeholder #1:</strong> Text</li>
+                        <li><strong>Placeholder #2:</strong> Text</li>
+                        <li><strong>Placeholder #3:</strong> Text</li>
+                        <li><strong>Placeholder #4:</strong> Text</li>
+                        <li><strong>Placeholder #5:</strong> Text</li>
+                        <li><strong>Placeholder #6:</strong> Text</li>
+                    </ul>
+                 </div>
+            </div>
+         </div>
+
+         <!-- Section Services -->
+
+         <div class="section services" id="section-services">
+            <div class="content">
+                <div class="titles">
+                    <div id="services" class="title">Services</div>
+                    <div class="subtitle">What I Do</div>
+                </div>
+            <div class="service-items">
+                <div class="service-column">
+                    <div class="service-item">
+                        <div class="icon"></div>
+                        <div class="name"></div>
+                        <div class="post-text"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+         </div>
+          <!-- Test -->
 
 
+
+
+
+
+<!-- Phonebook Project -> https://matthewhockham-phonebook.streamlit.app/ -->
     </body>
-
 
 </html>

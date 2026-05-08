@@ -1,10 +1,8 @@
 @charset "utf-8";
+/* CSS Document */
 
-@font-face {
-    font-family: 'CustomFont';
-    src: url('fonts/poppins/Poppins-Black.ttf') format('poppins');
-    font-weight: normal;
-    font-style: normal;
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -12,10 +10,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: Poppins;
+    background-color: #303235;
+    color: #fff;
 }
 
-header {
-    display: block;
+p {
+    font-size: 14px;
+    padding: 0;
+    margin: 30px 0;
 }
 
 .header {
@@ -67,12 +69,11 @@ header {
     max-width: 100%;
 }
 
-.btn.download-cv-btn {
+.btn.contact-me-btn {
     float: right;
     margin-top: 8px;
     margin-right: 8px;
     border-color: #fff;
-    border-radius: 100px;
 }
 
 a.btn, .btn {
@@ -83,6 +84,7 @@ a.btn, .btn {
     line-height: 62px;
     text-align: center;
     font-size: 12px;
+    font-family: Poppins;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
@@ -91,4 +93,244 @@ a.btn, .btn {
     text-decoration: none;
     border-width: 1px;
     border-style: solid;
+    border-radius: 100px;
+}
+
+.header-menu {
+    margin-right: 75px;
+    float: right;
+}
+
+ul {
+    list-style: disc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 0px;
+    list-style-position: inside;
+}
+
+li {
+    display: list-item;
+}
+
+.header-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu ul li {
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.header-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+}
+
+.background-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: aquamarine
+}
+
+.background-img {
+    filter: grayscale(100%);
+    mix-blend-mode: luminosity;
+}
+
+.section {
+    position: relative;
+    overflow: hidden;
+    margin: 50px 0 0 40vw;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #585d65;
+    z-index: 12;
+}
+
+.section.start {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    position: relative;
+    overflow: visible;
+    height: 100vh;
+    z-index: 11;
+}
+
+.section.start .central {
+    display: table !important;
+    table-layout: fixed !important;
+    height: 100% !important;
+    position: relative !important;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.section.start .full-width {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.section.start .central-vertical {
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+
+.section.start .h-title {
+    margin: 310px 0 0 35vw;
+    padding: 50px;
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: 800;
+    background: #303235;
+    word-break: break-word;
+    word-wrap: break-word;
+    border-radius: 264px;
+}
+
+.section.start h1 {
+    font-size: 34px;
+}
+
+.section.start h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.section.start .content-start {
+    padding-left: 54%;
+    padding-top: 0.5%;
+    max-width: 1500px;
+}
+
+.section.start .content-start .h-subtitles {
+    height: 18px;
+    margin: 0px 0px 30px;
+}
+
+.section.start .h-subtitle, .animation-subtitle, .typed-cursor {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.2;
+    color: aqua;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section.start .typed-cursor {
+    margin-left: 3px;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
+.section.start .content-start .h-text {
+    font-size: 14px;
+}
+
+.section.start .btn {
+    top: 50px;
+    margin-right: 15px;
+}
+
+.section.about .content {
+    position: relative;
+    max-width: 720px;
+}
+
+.section.about .titles {
+    position: relative;
+    margin: 0 0 60px 0;
+}
+
+.section.about .titles .title {
+    margin-bottom: 10px;
+    max-width: 70px;
+    font-size: 55px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.section.about .titles .subtitle {
+    font-size: 14px;
+    line-height: 1.2;
+    color: aqua;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section.about .columns {
+    margin: 0 -20px;
+    position: relative;
+}
+
+.section.about .columns .col {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    float: left;
+    width: 50%;
+}
+
+.section.about .columns .col.col-span {
+    width: 100%;
+}
+
+.section.about .info-list {
+    margin-bottom: 20px;
+}
+
+.section.about .info-list ul {
+    list-style: none;
+    margin: 0 -20px;
+    padding: 0;
+    font-size: 0;
+}
+
+.section.about .info-list ul li {
+    margin: 0 0 6px 0;
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section.about .info-list ul li strong {
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: aqua
 }
