@@ -1,187 +1,400 @@
 <!doctype html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Title of the Webpage -->
-        <title>Portfolio - Matthew Hockham</title>
-        <!-- Meta tag for SEO -->
-        <meta name="description" content="">
-        <!-- Linked CSS File -->
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <!-- Github Js File -->
-         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the Webpage -->
+    <title>Matthew Hockham - Portfolio</title>
+    <!-- Meta tag for SEO -->
+    <meta name="description" content="Portfolio of Matthew Hockham - Computing graduate with skills in Python, Web Development, Unity, Android Studio, and Networking.">
+    <!-- Linked Files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- GitHub JS File -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+<!-- Navigation Bar -->
+    <nav>
+        <div class="nav-logo">
+            <div class="nav-logo-icon">MH</div>
+            Matthew<br>Hockham
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">
+            Contact Me <i class="fa-solid fa-address-book"></i>
+        </a>
+    </nav>
 
-        <!-- Embedded CSS to allow smooth scroll -->
-        <style type="text/css">
-            @font-face { font-family: 'Poppins'; src: url('fonts/poppins/Poppins-Regular.ttf'); };
+    <!-- Hero -->
+     <div id="hero">
+        <!-- Fixed left photo panel -->
+         <div class="hero-photo">
+            <div class="hero-photo-inner">
+                <div class="placeholder-image">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Add photo</span>
+                </div>
+                <div class="hero-socials">
+                    <a href="#" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    
+                    <a href="#" href="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
 
-            html {
-                scroll-behavior: smooth !important;
-            }
-        </style>
+                    <a href="#" href="mailto:contact@mhockham.co.uk" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+         </div>
 
-    </head>
+         <!-- Floating Name -->
+          <div class="hero-name">
+            <h1>Matthew<br>Hockham</h1>
+          </div>
 
-    <body>
-    <!-- Header -->
-        <div class="header" id="header">
-        <!-- Logo -->
-            <div class="logo">
-                <a href="#">
-                    <img class="logo-img" src="images/logo.png" alt="My logo">
-                    <span class="logo-name">
-                        Matthew
-                        <br>
-                        Hockham
-                    </span>
+          <!-- Right Content -->
+           <div class="hero-content">
+            <div class="hero-inner">
+                <div class="hero-typed-wrap">
+                    <span class="hero-typed"></span>
+                </div>
+                <p class="hero-text">
+                    Computing graduate with hands-on experience across software development, web technologies, game development, mobile apps,
+                    and networking. Passionate about building things that work and look great.
+                </p>
+                <div class="hero-btn">
+                    <a href="#resume" class="btn-primary">
+                        My Resume <i class="fa-solid fa-file-lines"></i>
+                    </a>
+
+                    <a href="#projects" class="btn-outline">
+                        View my recent projects <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+           </div>
+     </div>
+
+     <!-- Sections -->
+      <div class="sections-wrap">
+
+        <!-- About -->
+         <section id="about">
+            <div class="section-label">Get to know me</div>
+            <div class="section-title">About Me</div>
+
+            <div class="about-grid">
+                <div>
+                    <p>I'm a computing graduate from a two-year college course covering everything from programming and web development
+                        to networking, game design, and mobile app development. I like building things - whether it's a project in Python,
+                        building a game inside Unity, or creating a responsive website. 
+                    </p>
+                </div>
+                <div>
+                    <p>Outside of my studies, I maintain my own personal domain and host my own projects, publicly. I enjoy turning coursework
+                        into real, live applications that people can actually use - like the projects you'll find below. *social media
+                    </p>
+                </div>
+                <div class="full">
+                    <p>I'm currently looking for my first role in the tech industry where I can contribute, keep learning, and grow. I'm 
+                        comfortable working across the full stack and I'm always keen to pick up new tools and technologies.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-row"><strong>Location</strong><span>Reading, England</span></div>
+                <div class="info-row"><strong>Education</strong><span>Computing - 2-Year College BTEC Level 3</span></div>
+                <div class="info-row"><strong>Focus</strong><span>Software, Web & Mobile Development</span></div>
+                <div class="info-row"><strong>Domain</strong><span>mhockham.co.uk</span></div>
+                <div class="info-row"><strong>Status</strong><span>Open to opportunities</span></div>
+                <div class="info-row"><strong>Interests</strong><span>Game Development, Networking, Programming/span></div>
+            </div>
+
+            <div class="skills-wrap">
+                <h3>Tech &amp; Tools</h3>
+                <div class="chips">
+                    <span class="chip">Python</span>
+                    <span class="chip">HTML / CSS</span>
+                    <span class="chip">Javascript</span>
+                    <span class="chip">Java</span>
+                    <span class="chip">Unity (C#)</span>
+                    <span class="chip">Android Studio</span>
+                    <span class="chip">Cisco Packet Tracer</span>
+                    <span class="chip">Adobe Photoshop</span>
+                    <span class="chip">Adobe Premiere Pro</span>
+                    <span class="chip">Microsoft Excel</span>
+                    <span class="chip">Microsoft Project</span>
+                    <span class="chip">Streamlit</span>
+                    <span class="chip">Git / GitHub</span>
+                </div>
+            </div>
+         </section>
+
+         <!-- Resume -->
+          <section id="resume">
+            <div class="section-label">Education &amp; Experience</div>
+            <div class="section-title">Resume</div>
+
+            <div class="timeline">
+
+                <div class="timeline-year">College - 2024/25</div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item-title">Principles of Computer Science</div>
+                    <div class="timeline-item-desc">Explored programming fundamentals in Python, binary number systems, and logic gates.
+                        Developed a strong foundation in computational thinking and problem-solving.
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-item-title">Fundamentals of Computer Science</div>
+                    <div class="timeline-item-desc">Studied key hardware and software components of modern computing systems - 
+                        from CPU architecture to operating system concepts.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item-title">IT Systems &amp; Encryption</div>
+                    <div class="timeline-item-desc">Learned to configure and secure networks, covering encryption methods,
+                        authentication methods, and common security vulnerabilities.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item-title">Digital Animation</div>
+                    <div class="timeline-item-desc">Designed and produced a short animation using Adobe Photoshop and Premiere Pro,
+                        covering keyframing, compositing, and video editing workflows.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item-title">Web Development</div>
+                    <div class="timeline-item-desc">Built a responsive website using HTML, CSS, and JavaScript - including a working
+                        carousel feature and cross-browser compatibility.
+                    </div>
+                </div>
+
+                <div class="timeline-year">College - 2025/26</div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item-title">Planning &amp; Management of Computer Projects</div>
+                    <div class="timeline-item-desc">Learned project management fundamentals using Microsoft Excel and Project. Covered
+                        Gantt charts, resource allocation, and sprint planning basics.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item-title">Software Design &amp; Development</div>
+                    <div class="timeline-item-desc">Advanced Python programming: data structures, OOP principles, file I/O, and building
+                        real-world applications including a fully functional phonebook system.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item-title">Impact of Computing</div>
+                    <div class="timeline-item-desc">Researched and evaluated the environmental and societal impacts of modern technology,
+                        including e-waste, data centre energy usage, and digital inclusion.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item-title">Computer Games Development</div>
+                    <div class="timeline-item-desc">Collaborated in a team of 4 to design and build a 2D game using Unity Engine.
+                        Covered game loops, physics, sprite animation, and version control using Git.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item-title">Mobile Applications Development</div>
+                    <div class="timeline-item-desc">Created a fully working Android mobile application using Java and Android Studio - covering
+                        UI layouts, activities, intents, and device API integration.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item-title">Computer Networking</div>
+                    <div class="timeline-item-desc">Built and configured a simulated network in Cisco Packet Tracer, covering subnetting
+                        routing protocols, VLANs, and network troubleshooting.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-item-title">System Analysis &amp; Design</div>
+                    <div class="timeline-item-desc">Studied software development lifecycles, requirements gathering, UML diagrams,
+                        and frontend UI/UX design processes for real-world systems.
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- Projects -->
+           <section id="projects">
+            <div class="section-label">Things I've Built</div>
+            <div class="section-title">My Projects</div>
+
+            <div class="projects-grid">
+
+                <div class="project-card" onclick="openModal('phonebook')">
+                    <div class="project-thumb">
+                        <div class="project-thumb-bg"></div>
+                        <div class="project-thumb-overlay"></div>
+                        <i class="fa-solid fa-address-book" style="position: relative; z-index: 1;"></i>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Streamlit</span>
+                        </div>
+                        <div class="project-name">Python Phonebook</div>
+                        <div class="project-desc">A fully functional phonebook app built in Python, using TKinter and SQLite Database,
+                            and deployed live via Streamlit. Add, search, edit, and delete contacts in the browser.
+                        </div>
+                        <div class="project-footer">
+                            <span>Click to Launch</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('game')">
+                    <div class="project-thumb">
+                        <div class="project-thumb-bg"></div>
+                        <div class="project-thumb-overlay" style="background:linear-gradient(135deg, rgba(62,207,178,0.08),
+                        rgba(100,80,200,0.12))"></div>
+                        <i class="fa-solid fa-gamepad" style="position: relative; z-index: 1;"></i>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Unity</span>
+                            <span class="project-tag">C#</span>
+                            <span class="project-tag">Team Project</span>
+                        </div>
+                        <div class="project-name">Unity 2D Game</div>
+                        <div class="project-desc">A 2D web game built as a team of 4 using Unity Engine. Playable right here in the browser - 
+                            no download needed.
+                        </div>
+                        <div class="project-footer">
+                            <span>Click to Play</span>
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('mobile')">
+                    <div class="project-thumb">
+                        <div class="project-thumb-bg"></div>
+                        <div class="project-thumb-overlay style="background:linear-gradient(135deg, rgba(62,207,178,0.06),
+                        rgba(100,80,200,0.1))"></div>
+                        <i class="fa-solid fa-mobile-screen" style="position: relative; z-index: 1;"></i>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">Android</span>
+                            <span class="project-tag">Appetize.io</span>
+                        </div>
+                        <div class="project-name">Android Mobile App</div>
+                        <div class="project-desc">A fully working Android app built with Java, XML, and Android Studio. Emulated live
+                            in the browser via Appetize.io - tap to interact.
+                        </div>
+                        <div class="project-footer">
+                            <span>Click to Run</span>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+           </section>
+
+           <!-- Contact -->
+            <section id="contact">
+                <div class="section-label">Get in touch</div>
+                <div class="section-title">Contact Me</div>
+
+                <div class="contact-wrap">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>Drop me a message and I'll get back to you as soon as I can.</p>
+                        <a href="mailto:">contact@mhockham.co.uk</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-brands fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>Check out my public repositories and project source codes.</p>
+                        <a href="https://github.com/MatthewHockham" target="_blank">github.com/MatthewHockham</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me professionally - always open to opportunities.</p>
+                        <a href="https://linkedin.com/" target="_blank">linkedin.com/</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                Built by <span>Matthew Hockham</span> &mdash; mhockham.co.uk
+            </footer>
+
+      </div>
+
+      <!-- Modal -->
+       <div class="modal-backdrop" id="modal-backdrop" onclick="handleBackdropClick(event)">
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="modal-header-left">
+                    <div class="modal-title" id="modal-title">Project</div>
+                    <div class="modal-subtitle" id="modal-subtitle"></div>
+                </div>
+                <button class="modal-close" onclick="closeModal()" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-iframe-wrap" id="modal-iframe-wrap">
+                    <div class="modal-loading" id="modal-loading">
+                        <i class="fa-solid fa-spinner"></i>
+                        <span>Loading Project</span>
+                    </div>
+                    <iframe id="modal-iframe" src="" title="Project embed" allowfullscreen allow="autoplay; gamepad" onload="iframeLoaded()"></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-tags" id="modal-tags"></div>
+                <a class="modal-open-btn" id="modal-ext-link" href="#" target="_blank">
+                    Open in new tab <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
             </div>
-        <!-- Mobile Menu Button -->
-             <a href="#" class="menu-btn"></a>
-
-        <!-- Contact Me Button -->
-            <a href="#" class="btn contact-me-btn">
-                CONTACT ME
-                <i class="fa-solid fa-address-book"></i>
-            </a>
-            
-
-        <!-- Buttons for Header -->
-            <div class="header-menu">
-                <div class="header-menu-nav">
-                    <ul class="menu">
-                        <li class="menu-item">
-                            <a href="#section-start">HOME</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#about">ABOUT</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#resume">RESUME</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#projects">MY PROJECTS</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
-    <!-- Background -->
-         <div class="background">
-            <div class="background-filter">
-                <div class="background-img" style="background-image: url('');"></div>
-            </div>
-         </div>
-         
-    <!-- Main Section Begins Here -->
-         <div class="section start" id="section-start">
-            <div class="central full-width">
-                <div class="center-vertical">
-                    <h1 class="h-title">
-                        Matthew
-                        <br>
-                        Hockham
-                    </h1>
+       </div>
 
-                    <div class="content-start">
-                        <div class="h-subtitles">
-                            <div class="h-subtitle animation-subtitle"></div>
-                            <span class="animation-subtitle"></span>
-
-                            <!-- Embedded JS for typing effect -->
-                            <script>
-                                var typed = new Typed(".animation-subtitle", {
-                                    strings: ["Text #1", "Placeholder #2"],
-                                    typeSpeed: 25,
-                                    backSpeed: 25,
-                                    loop: true
-                                });
-                            </script>
-
-                        </div>
-                        <div class="h-text">
-                             This is just a placeholder text for the homepage. It will be replaced soon :) 
-                        </div>
-                        <!-- Contact Me Button #2 -->
-                         <a href="#" class="btn">
-                            CONTACT ME
-                            <i class="icon fas fa-chevron-right"></i>
-                         </a>
-                    </div>
-                </div>
-            </div>
-         </div>
-
-         <!-- About Section Begins Here -->
-         <div class="section about" id="section-about">
-            <div class="content">
-                <div class="titles">
-                    <div id="about" class="title">About Me</div>
-                    <div class="subtitle">My Story</div>
-                </div>
-
-                <!-- Text -->
-                 <div class="columns">
-                    <div class="col">
-                        <div class="post-text">
-                            <p>Placeholder</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="post-text">
-                            <p>Placeholder</p>
-                        </div>
-                    </div>
-                    <div class="col-span">
-                        <div class="post-text">
-                            <p>Placeholder Text</p>
-                        </div>
-                    </div>
-                 </div>
-                 <div class="info-list">
-                    <ul>
-                        <li><strong>Placeholder #1:</strong> Text</li>
-                        <li><strong>Placeholder #2:</strong> Text</li>
-                        <li><strong>Placeholder #3:</strong> Text</li>
-                        <li><strong>Placeholder #4:</strong> Text</li>
-                        <li><strong>Placeholder #5:</strong> Text</li>
-                        <li><strong>Placeholder #6:</strong> Text</li>
-                    </ul>
-                 </div>
-            </div>
-         </div>
-
-         <!-- Section Services -->
-
-         <div class="section services" id="section-services">
-            <div class="content">
-                <div class="titles">
-                    <div id="services" class="title">Services</div>
-                    <div class="subtitle">What I Do</div>
-                </div>
-            <div class="service-items">
-                <div class="service-column">
-                    <div class="service-item">
-                        <div class="icon"></div>
-                        <div class="name"></div>
-                        <div class="post-text"></div>
-                    </div>
-                </div>
-            </div>
-            </div>
-         </div>
-          <!-- Test -->
-
-
-
-
-
+    <!-- <script>
+        var typed = new Typed(".animation-subtitle", {
+            strings: ["Text #1", "Placeholder #2"],
+            typeSpeed: 25,
+            backSpeed: 25,
+            loop: true
+        });
+    </script> -->
 
 <!-- Phonebook Project -> https://matthewhockham-phonebook.streamlit.app/ -->
     </body>
-
 </html>
