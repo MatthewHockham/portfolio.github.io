@@ -14,7 +14,7 @@ const projects = {
         tags: ['Python', 'Streamlit'],
         embedBlocked: true,
         icon: 'fa-address-book',
-        launchNote: 'This app is built with Streamlit, which prevents it from loading inside an iframe for security reasons. + '
+        launchNote: 'This app is built with Streamlit, which prevents it from loading inside an iframe for security reasons. '
         + ' Click the button below to open it in a new tab - it\'s fully live and interactive!' 
     },
     game: {
@@ -23,7 +23,7 @@ const projects = {
         url: 'https://game.mhockham.co.uk/',
         tags: ['Unity', 'C#', 'Team Project'],
         embedBlocked: false,
-        wrapClass= 'game-embed'
+        wrapClass: 'game-embed'
     },
     mobile: {
         title: 'Android Mobile App',
@@ -32,7 +32,7 @@ const projects = {
         tags: ['Java', 'Android', 'XML', 'Appetize.io'],
         embedBlocked: true,
         icon: 'fa-mobile-screen',
-        launchNote: 'This app is built with Appetize.io which blockes embedding inside iframes. + '
+        launchNote: 'This app is built with Appetize.io which blockes embedding inside iframes.'
         + ' Click the button below to open the live Android emulator in a new tab - it\'s fully live and interactive!'
     },
     facerec: {
@@ -42,8 +42,8 @@ const projects = {
         tags: ['Python', 'Machine Learning', 'OpenCV', 'Git'],
         embedBlocked: true,
         icon: 'fa-eye',
-        launchNote: 'This was a collaborative college project - I contributed to building a facial recognition application + '
-        + ' in Python, working with computer vision libraries. The team used Git and GitHub throughout the version control and +'
+        launchNote: 'This was a collaborative college project - I contributed to building a facial recognition application '
+        + ' in Python, working with computer vision libraries. The team used Git and GitHub throughout the version control and '
         + ' task coordination. I do not have a link to this for intellectual property purposes.'
     }
 };
@@ -90,7 +90,7 @@ function openModal(key) {
           </div>
           <iframe src="${p.url}" title="${p.title}" allowfullscreen
             allow="autoplay; gamepad"
-            style="position: absolute;inset: 0;width: 100%;height: 100%;border: none;opacity: 0;transition: opacity 0.3s;"
+            style="position: absolute;inset: 0;width: 175%;height: 120%;border: none;opacity: 0;transition: opacity 0.3s;"
             onload="this.style.opacity='1'; document.getElementById('modal-loading').style.display='none';">
           </iframe>`;
       }
